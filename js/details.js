@@ -18,7 +18,7 @@ export class Details {
                 'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
             }
         })
-        // let result = await data.json()
+        let result = await data.json()
         this.ui.displayDetails(result)
         document.querySelector('.loading').classList.add('d-none')
         document.querySelector('body').classList.remove('overflow-hidden')
