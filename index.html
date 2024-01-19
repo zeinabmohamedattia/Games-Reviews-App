@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Nerko+One&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Home</title>
+</head>
+
+<body class="bg-dark">
+    <div
+        class="loading bg-dark d-none position-fixed top-0 bottom-0 start-0 end-0 d-flex justify-content-center align-items-center">
+        <span class="loader"></span>
+    </div>
+    <home class="d-block  ">
+        <header>
+        </header>
+        <nav class="navbar navbar-expand-md  z-3 dark-bg  py-2  nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9  mx-auto"
+            data-bs-theme="dark">
+            <div class="container px-2">
+                <h5 class="navbar-brand mb-0 text-uppercase fs-3 header-font ">
+                    <img src="./images/logo-sm.png" alt="logo photo" style="max-width: 40px">
+                    game reviews
+                </h5>
+                <button class="navbar-toggler border-0 " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item  ">
+                            <a class="nav-link  px-3 active text-uppercase" aria-current="page">mmorpg</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3  text-uppercase">shooter</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3  text-uppercase">sailing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3   text-uppercase">permadeath</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link  px-3  text-uppercase">superhero</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  px-3  text-uppercase">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="games-container container py-5">
+            <div class="position-relative">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="allGames">
+                </div>
+            </div>
+        </div>
+    </home>
+    <section class="game-details d-none bg-dark  text-white py-5">
+        <div class="container">
+            <div class="header d-flex align-items-center justify-content-between">
+                <h1 class="header-font fs-1 "> Game Details</h1>
+                <i class="fa fa-xmark fa-2xl close"> </i>
+            </div>
+            <div class="row g-4 py-4" id="details">
+            </div>
+        </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>
